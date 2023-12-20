@@ -36,24 +36,24 @@ function Constraints(props) {
 
 export default function ProblemDescritptionComponent() {
   return (
-    <div className="container w-full h-screen bg-slate-800 text-white basis-1/2 px-5 py-3 flex text-left overflow-auto rounded-lg m-2">
-      <div className="text-2xl font-medium">
-        34. Find the first and the last element in an Array
-        <div className="flex">
-          <ChipComponent text="DP" />
-          <ChipComponent text="Binary Search" />
+    <div className="bg-slate-800 text-white px-5 py-3 flex text-left overflow-auto rounded-lg h-full">
+        <div className="text-2xl font-medium">
+          34. Find the first and the last element in an Array
+          <div className="flex flex-wrap">
+            <ChipComponent text="DP" />
+            <ChipComponent text="Binary Search" />
+          </div>
+          <div className="text-[16px] text-sky-400 bg-cyan-900 p-2 rounded-lg mt-2">
+            Given an array of integers nums sorted in non-decreasing order, find
+            the starting and ending position of a given target value. If target
+            is not found in the array, return [-1, -1]. You must write an
+            algorithm with O(log n) runtime complexity.
+          </div>
+          <TestCaseExample count="5" />
+          <TestCaseExample count="2" />
+          <TestCaseExample count="3" />
+          <Constraints />
         </div>
-        <div className="text-[16px] text-sky-400 bg-cyan-900 p-2 rounded-lg mt-2">
-          Given an array of integers nums sorted in non-decreasing order, find
-          the starting and ending position of a given target value. If target is
-          not found in the array, return [-1, -1]. You must write an algorithm
-          with O(log n) runtime complexity.
-        </div>
-        <TestCaseExample count="5" />
-        <TestCaseExample count="2" />
-        <TestCaseExample count="3" />
-        <Constraints />
       </div>
-    </div>
   );
 }
